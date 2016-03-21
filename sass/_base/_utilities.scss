@@ -1,0 +1,514 @@
+/*------------------------------------*\
+    #Utilities
+\*------------------------------------*/
+
+// BACKGROUNDS
+.primary-background {background: $brand-primary !important;}
+.secondary-background {background: $brand-secondary !important;}
+.dark-grey-background{background: $color-dark-gray !important;}
+.light-grey-background{background: $color-light-gray !important;}
+.white-background{background: #fff !important;}
+.subtle-grey-background{background: #f5f6f8 !important;}
+
+
+// COLORS
+.primary-color{color: $brand-primary !important;}
+.secondary-color{color: $brand-secondary !important;}
+.dark-grey-color{color: $color-dark-gray !important;}
+.light-grey-color{color: $color-light-gray !important;}
+.white-color{color: #fff !important;}
+
+// TYPOS
+.font-normal{font-weight: normal !important;}
+.font-thin{font-weight: 300 !important;}
+.font-sbold{font-weight: 600 !important;}
+.font-bold{font-weight: 700 !important;}
+.font-ebold{font-weight: 900 !important;}
+.font-light {
+  font-family: $font-primary-light !important;
+  font-weight: 300 !important;
+}
+
+.font-bigger {
+  font-size: 1.3em;
+}
+
+.text-ellipsis{
+  display: block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow:ellipsis !important;
+}
+
+.text-center { text-align: center !important;}
+.text-left { text-align: left !important;}
+.text-right { text-align: right !important;}
+.text-u-c, .upper { text-transform: uppercase !important;}
+.no-upper { text-transform: none !important;}
+.text-l-t{ text-decoration: line-through !important;}
+.text-u-l, .underline { text-decoration: underline !important;}
+.text-c { text-transform: capitalize !important;}
+.text-justify { text-align: justify !important;}
+.text-italic { font-style: italic !important;}
+.break-word { word-wrap: break-word !important;}
+
+.l-h-2x{line-height: rem-calc(18) !important;}
+.l-h-1x{line-height: 1.2 !important;}
+.l-h{line-height: 1.5 !important;}
+.l-n { line-height: 1em !important;}
+
+label > span {
+  color: $brand-primary !important;
+}
+
+a.no-hover:hover {
+  text-decoration: none;
+}
+
+// OPACITY
+.op-8 { opacity:0.8 !important;}
+.op-6 { opacity:0.6 !important;}
+.op-4 { opacity:0.4 !important;}
+.op-2 { opacity:0.2 !important;}
+.op-0 { opacity:0 !important;}
+
+// STYLES
+.fl-left {float: left !important;}
+.fl-right {float: right !important;}
+.fl-none {float: none !important;}
+
+.cover { background-size: cover !important;}
+
+.line {*width: 100%;height: 2px;margin: 10px 0;font-size:0;overflow: hidden;}
+.line-s{height: 1px;}
+.line-xs{margin: 0}
+.line-lg{margin-top:15px;margin-bottom: 15px}
+.line-dashed{border-style: dashed !important;background-color: transparent;border-width:0;}
+.no-line{border-width: 0}
+
+
+// POSITION AND DISPLAY
+.pos-rlt {position: relative !important;}
+.pos-stc {position: static !important;}
+.pos-abt {position: absolute !important;}
+
+.block { display:block !important; }
+.block.hide { display: none !important; }
+.inline { display:inline-block !important; }
+.disp-inline { display:inline; }
+
+.hidden {display: none !important;}
+
+.v-middle{vertical-align: middle !important;}
+.v-top{vertical-align: top !important;}
+.v-bottom{vertical-align: bottom !important;}
+
+.pull-in { margin-left: -15px;margin-right: -15px !important;}
+.pull-out { margin:-10px -15px !important;}
+.no-pull, .pull-none{ float: none !important;}
+
+.clear{display:block;overflow: hidden; clear: both;}
+
+// SIZES
+.width-70 { width: 70% !important;}
+.h480 { height: 480px !important;}
+
+// BUTTONS
+.btn-s-xs{min-width: 90px !important;}
+.btn-s-sm{min-width: 100px !important;}
+.btn-s-md{min-width: 120px !important;}
+.btn-s-lg{min-width: 150px !important;}
+.btn-s-xl{min-width: 200px !important;}
+
+
+// SPACERS
+.row-spacer { height: 40px !important;}
+.nopadding { padding: 0 !important; margin: 0 !important;}
+.no-padder{ padding: 0 !important;}
+
+.wrapper-xxs{padding: 4px 6px !important;}
+.wrapper-sm{padding: 5px 10px !important;}
+.wrapper{padding: 15px !important;}
+.wrapper-md{padding: 20px !important;}
+.wrapper-lg{padding: 30px !important;}
+.wrapper-lg-h{padding: 30px 0 !important;}
+.wrapper-xl{padding: 50px !important;}
+
+.padder{padding-left:15px;padding-right: 15px !important;}
+.padder-icon{padding-left:30px;padding-right: 0px; padding-top: 3px; height: 21px !important;}
+.padder-v{padding-top:15px;padding-bottom: 15px !important;}
+
+.padder-bottom { padding-bottom: 15px !important;}
+
+.p-lg { padding: 30px !important;}
+.p-l { padding: 16px !important;}
+.p-l-35 { padding-left: 35px !important;}
+
+.m-xxs{margin: 2px 4p !importantx}
+.m-xs{margin: 5px !important;}
+.m-sm{margin: 10px !important;}
+.m{margin: 15px !important;}
+.m-md{margin: 20px !important;}
+.m-lg{margin: 30px !important;}
+.m-xl{margin: 50px !important;}
+.m-n{margin: 0 !important;}
+
+.m-l-none{margin-left: 0 !important;}
+.m-l-xs{margin-left: 5px !important;}
+.m-l-sm{margin-left: 10px !important;}
+.m-l{margin-left: 15px !important;}
+.m-l-md{margin-left: 20px !important;}
+.m-l-lg{margin-left: 30px !important;}
+.m-l-xl{margin-left: 40px !important;}
+
+.m-l-n-xxs{margin-left: -1px !important;}
+.m-l-n-xs{margin-left: -5px !important;}
+.m-l-n-sm{margin-left: -10px !important;}
+.m-l-n{margin-left: -15px !important;}
+.m-l-n-md{margin-left: -20px !important;}
+.m-l-n-lg{margin-left: -30px !important;}
+.m-l-n-xl{margin-left: -40px !important;}
+
+.m-t-none{margin-top:0 !important;}
+.m-t-xxs{margin-top: 1px !important;}
+.m-t-xs{margin-top: 5px !important;}
+.m-t-sm{margin-top: 10px !important;}
+.m-t{margin-top: 15px !important;}
+.m-t-md{margin-top: 20px !important;}
+.m-t-lg{margin-top: 30px !important;}
+.m-t-xl{margin-top: 40px !important;}
+.m-t-xxl{margin-top: 50px !important;}
+
+.m-t-n-xxs{margin-top: -1px !important;}
+.m-t-n-xs{margin-top: -5px !important;}
+.m-t-n-sm{margin-top: -10px !important;}
+.m-t-n{margin-top: -15px !important;}
+.m-t-n-md{margin-top: -20px !important;}
+.m-t-n-lg{margin-top: -30px !important;}
+.m-t-n-xl{margin-top: -40px !important;}
+
+.m-r-none{margin-right: 0 !important;}
+.m-r-xxs{margin-right: 1px !important;}
+.m-r-xs{margin-right: 5px !important;}
+.m-r-sm{margin-right: 10px !important;}
+.m-r{margin-right: 15px !important;}
+.m-r-md{margin-right: 20px !important;}
+.m-r-lg{margin-right: 30px !important;}
+.m-r-xl{margin-right: 40px !important;}
+
+.m-r-n-xxs{margin-right: -1px !important;}
+.m-r-n-xs{margin-right: -5px !important;}
+.m-r-n-sm{margin-right: -10px !important;}
+.m-r-n{margin-right: -15px !important;}
+.m-r-n-md{margin-right: -20px !important;}
+.m-r-n-lg{margin-right: -30px !important;}
+.m-r-n-xl{margin-right: -40px !important;}
+
+.m-b-none{margin-bottom: 0px !important}
+.m-b-xxs{margin-bottom: 1px !important;}
+.m-b-xs{margin-bottom: 5px !important;}
+.m-b-sm{margin-bottom: 10px !important;}
+.m-b{margin-bottom: 15px !important;}
+.m-b-md{margin-bottom: 20px !important;}
+.m-b-lg{margin-bottom: 30px !important;}
+.m-b-xl{margin-bottom: 40px !important;}
+.m-b-xxl{margin-bottom: 50px !important;}
+
+.m-b-n-xxs{margin-bottom: -1px !important;}
+.m-b-n-xs{margin-bottom: -5px !important;}
+.m-b-n-sm{margin-bottom: -10px !important;}
+.m-b-n{margin-bottom: -15px !important;}
+.m-b-n-md{margin-bottom: -20px !important;}
+.m-b-n-lg{margin-bottom: -30px !important;}
+.m-b-n-xl{margin-bottom: -40px !important;}
+
+
+.p-xxs{padding: 2px 4p !importantx}
+.p-xs{padding: 5px !important;}
+.p-sm{padding: 10px !important;}
+.m{padding: 15px !important;}
+.p-md{padding: 20px !important;}
+.p-lg{padding: 30px !important;}
+.p-xl{padding: 50px !important;}
+.p-n{padding: 0 !important;}
+
+.p-l-none{padding-left: 0 !important;}
+.p-l-xs{padding-left: 5px !important;}
+.p-l-sm{padding-left: 10px !important;}
+.p-l{padding-left: 15px !important;}
+.p-l-md{padding-left: 20px !important;}
+.p-l-lg{padding-left: 30px !important;}
+.p-l-xl{padding-left: 40px !important;}
+
+.p-t-none{padding-top:0 !important;}
+.p-t-xxs{padding-top: 1px !important;}
+.p-t-xs{padding-top: 5px !important;}
+.p-t-sm{padding-top: 10px !important;}
+.p-t{padding-top: 15px !important;}
+.p-t-md{padding-top: 20px !important;}
+.p-t-lg{padding-top: 30px !important;}
+.p-t-xl{padding-top: 40px !important;}
+.p-t-xxl{padding-top: 50px !important;}
+
+.p-r-none{padding-right: 0 !important;}
+.p-r-xxs{padding-right: 1px !important;}
+.p-r-xs{padding-right: 5px !important;}
+.p-r-sm{padding-right: 10px !important;}
+.p-r{padding-right: 15px !important;}
+.p-r-md{padding-right: 20px !important;}
+.p-r-lg{padding-right: 30px !important;}
+.p-r-xl{padding-right: 40px !important;}
+.p-r-xl{padding-right: 50px !important;}
+
+.p-b-none{padding-bottom: 0px !important}
+.p-b-xxs{padding-bottom: 1px !important;}
+.p-b-xs{padding-bottom: 5px !important;}
+.p-b-sm{padding-bottom: 10px !important;}
+.p-b{padding-bottom: 15px !important;}
+.p-b-md{padding-bottom: 20px !important;}
+.p-b-lg{padding-bottom: 30px !important;}
+.p-b-xl{padding-bottom: 40px !important;}
+.p-b-xxl{padding-bottom: 50px !important;}
+
+
+// BORDERS
+.b-2x{border-width: 2px !important;}
+.b-3x{border-width: 3px !important;}
+.b-4x{border-width: 4px !important;}
+.b-5x{border-width: 5px !important;}
+
+.no-b { border: none !important; }
+.no-border, .no-borders{ border-color: transparent !important; border-width: 0 !important; }
+
+
+//
+// Responsive: Utility classes
+// --------------------------------------------------
+
+
+//
+// More easily include all the states for responsive-utilities.less.
+// [converter] $parent hack
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+  table#{$parent}  { display: table !important; }
+  tr#{$parent}     { display: table-row !important; }
+  th#{$parent},
+  td#{$parent}     { display: table-cell !important; }
+}
+
+// [converter] $parent hack
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+// IE10 in Windows (Phone) 8
+//
+// Support for responsive views via media queries is kind of borked in IE10, for
+// Surface/desktop in split view and for Windows Phone 8. This particular fix
+// must be accompanied by a snippet of JavaScript to sniff the user agent and
+// apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+// our Getting Started page for more information on this bug.
+//
+// For more information, see the following:
+//
+// Issue: https://github.com/twbs/bootstrap/issues/10497
+// Docs: http://getbootstrap.com/getting-started/#support-ie10-width
+// Source: http://timkadlec.com/2013/01/windows-phone-8-and-device-width/
+// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+@include responsive-invisibility('.visible-phone');
+@include responsive-invisibility('.visible-tablet');
+@include responsive-invisibility('.visible-desktop');
+
+.visible-phone-block,
+.visible-phone-inline,
+.visible-phone-inline-block,
+.visible-tablet-block,
+.visible-tablet-inline,
+.visible-tablet-inline-block,
+.visible-desktop-block,
+.visible-desktop-inline,
+.visible-desktop-inline-block {
+  display: none !important;
+}
+
+@media (max-width: $screen-phone-max) {
+  @include responsive-visibility('.visible-phone');
+}
+.visible-phone-block {
+  @media (max-width: $screen-phone-max) {
+    display: block !important;
+  }
+}
+.visible-phone-inline {
+  @media (max-width: $screen-phone-max) {
+    display: inline !important;
+  }
+}
+.visible-phone-inline-block {
+  @media (max-width: $screen-phone-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+  @include responsive-visibility('.visible-tablet');
+}
+.visible-tablet-block {
+  @media (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+    display: block !important;
+  }
+}
+.visible-tablet-inline {
+  @media (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+    display: inline !important;
+  }
+}
+.visible-tablet-inline-block {
+  @media (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-desktop-min) {
+  @include responsive-visibility('.visible-desktop');
+}
+.visible-desktop-block {
+  @media (min-width: $screen-desktop-min) {
+    display: block !important;
+  }
+}
+.visible-desktop-inline {
+  @media (min-width: $screen-desktop-min) {
+    display: inline !important;
+  }
+}
+.visible-desktop-inline-block {
+  @media (min-width: $screen-desktop-min) {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: $screen-phone-max) {
+  @include responsive-invisibility('.hidden-phone');
+}
+
+@media (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+  @include responsive-invisibility('.hidden-tablet');
+}
+
+@media (min-width: $screen-desktop-min) {
+  @include responsive-invisibility('.hidden-desktop');
+}
+
+
+// Thumbs
+.thumb-lg{width: 128px !important; display: inline-block !important;}
+.thumb-md{width: 64px !important; display: inline-block !important;}
+.thumb{width: 50px !important; display: inline-block !important;}
+.thumb-sm{width: 34px !important; display: inline-block !important;}
+.thumb-xs{width: 24px !important; display: inline-block !important;}
+.thumb-wrapper{padding: 2px !important; border: 1px solid $color-light-gray !important;}
+.thumb img,
+.thumb-xs img,
+.thumb-sm img,
+.thumb-md img,
+.thumb-lg img,
+.thumb-btn img{
+  // height: auto !important;
+  // max-width: 100% !important;
+  vertical-align: middle !important;
+}
+.img-full{
+  max-width: 100% !important;
+  > img{
+    max-width: 100% !important;
+  }
+}
+.max-w-100 {
+  max-width: 100% !important;
+}
+
+// SCROLLS
+.scroll-x,
+.scroll-y{
+  overflow:hidden !important;
+  -webkit-overflow-scrolling:touch !important;
+}
+.scroll-y{overflow-y:auto !important;}
+.scroll-x{overflow-x:auto !important;}
+.no-touch {
+  .scroll-x,
+  .scroll-y{
+    overflow: hidden !important;
+  }
+  .scroll-x{
+    &:hover,
+    &:focus,
+    &:active{
+      overflow-x: auto !important;
+    }
+  }
+  .scroll-y{
+    &:hover,
+    &:focus,
+    &:active{
+      overflow-y: auto !important;
+    }
+  }
+  .hover-action{
+    display: none !important;
+  }
+  .hover:hover {
+    .hover-action{
+      display: inherit !important;
+    }
+  }
+}
+
+.two-col {
+  display: inline-block !important;
+  width: 100% !important;
+  & > * {
+    width: 48% !important;
+    float: left !important;
+
+    &:first-child {
+      margin-right: 4% !important;
+    }
+  }
+
+  &:after {
+    content: "" !important;
+    clear: both !important;
+    float: none !important;
+  }
+}
+
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+  .hide-b-md { border: none !important; }
+}
+
+/*phone*/
+@media (max-width: 767px) {
+  .shift{display: none !important;}
+  .shift.in{display: block !important;}
+  .text-center-xs{text-align: center !important;}
+  .text-left-xs{text-align: left !important;}
+  .pull-none-xs{float: none !important;}
+  .hidden-xs.show{display: inherit !important;}
+  .wrapper-lg{padding: 15px !important;}
+}

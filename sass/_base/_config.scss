@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #Config
+\*------------------------------------*/
+$max-container-width: 990px !default;
+
+$background-color: #fff !default;
+$brand-primary: #26e6e6 !default;
+$brand-secondary: #000 !default;
+
+$color-danger: #dd4949 !default;
+$color-warning: #f88617 !default;
+$color-success: #73b47d !default;
+$color-dark-gray: #3b3938 !default;
+$color-light-gray: #919191 !default;
+
+$font-primary: "montserratlight", Arial, sans-serif !default;
+$font-primary-light: "montserrathairline", Arial, sans-serif !default;
+$font-primary-bold: "montserratsemi_bold", Arial, sans-serif !default;
+$font-primary-black: "montserratblack", Arial, sans-serif !default;
+
+$breakpoint-phone: 568px !default;
+$breakpoint-tablet: 768px !default;
+$breakpoint-desktop: 960px !default;
+
+$screen-phone-max: $breakpoint-phone !default;
+$screen-tablet-min: $breakpoint-phone + 1 !default;
+$screen-tablet-max: $breakpoint-tablet !default;
+$screen-desktop-min: $breakpoint-tablet + 1 !default;
+
+//** Number of columns in the grid.
+$grid-columns: 12 !default;
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px !default;
+
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint: $breakpoint-tablet !default;
+
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;

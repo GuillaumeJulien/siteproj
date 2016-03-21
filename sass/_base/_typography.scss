@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
+/**
+ * Headings
+ **/
+$heading-font-color: #000000;
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-primary-light;
+  color: $heading-font-color;
+  font-weight: 800;
+  margin: .5em 0;
+
+  &.upper {
+    letter-spacing: .05em;
+  }
+}
+
+// Use .h* classes to override default h* sizes
+h1, .h1 {font-size: 7.2rem; line-height: 1em;}
+h2, .h2 {font-size: 5.5rem; line-height: 1.2em;}
+h3, .h3 {font-size: 2.8rem; line-height: 1.3em;}
+h4, .h4 {font-size: 2rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
+h5, .h5 {font-size: 1.8rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
+h6, .h6 {font-size: 1.6rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
+
+@media screen and (max-width: 48rem) {
+  h1, .h1 {font-size: 5rem;}
+  h2, .h2 {font-size: 4.2rem;}
+  h3, .h3 {font-size: 3.3rem;}
+}
+
+/**
+ * Texts
+ **/
+a {
+  color: $brand-primary;
+  text-decoration: none;
+  position: relative;
+}
+
+blockquote {
+  font-size: 3.6rem;
+  font-family: $font-primary-light;
+  color: $heading-font-color;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin: 0;
+
+  cite {
+    display: block;
+    font-family: $font-primary;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  small {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+mark {
+  background: $brand-primary;
+  padding: 0 5px;
+  color: #fff;
+}
+
+p {
+  color: $color-light-gray;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
