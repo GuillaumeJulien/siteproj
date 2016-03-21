@@ -1,12 +1,6 @@
 document.getElementById('home-video').addEventListener('ended', onVideoEnded);
 
 function onVideoEnded (){
-  document.getElementById('home-content').style.opacity = 1;
-  var title = document.getElementById('title');
-  if (title.classList){
-    title.classList.add('infinite');
-    title.classList.add('blink');
-  }else{
-    title.className += ' blink infinite';
-  }
+  document.getElementById('home-content').classList.add('home__content--visible');
+  document.getElementById('title').classList.add('blink');
 }
