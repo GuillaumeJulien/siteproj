@@ -1,7 +1,9 @@
-.blink {
+.blink.infinite {
+   animation: blink linear infinite 3s;
+}
+.blink{
    animation: blink linear 5s;
 }
-
 
 
 
@@ -24,7 +26,7 @@
    // flicker
   38.5% { opacity: 1; }
   39% { opacity: .8; }
-  42% { opacity: 1; }
+  42% { opacity: .2; }
 
   // flicker
   60% { opacity: 1; }
