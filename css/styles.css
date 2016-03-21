@@ -12,6 +12,7 @@
  * #Layout...............Global layout
  *
  * #COMPONENTS
+ * #Buttons..............Buttons
  *
  * #MODULES
  * #Home.................Home styles
@@ -29,6 +30,27 @@
 /*------------------------------------*\
     #Fonts
 \*------------------------------------*/
+@font-face {
+  font-family: 'baseonebold';
+  src: url("../fonts/baseone-bold-webfont.eot");
+  src: url("../fonts/baseone-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/baseone-bold-webfont.woff2") format("woff2"), url("../fonts/baseone-bold-webfont.woff") format("woff"), url("../fonts/baseone-bold-webfont.ttf") format("truetype"), url("../fonts/baseone-bold-webfont.svg#baseonebold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'baseoneheavy';
+  src: url("../fonts/baseone-heavy-webfont.eot");
+  src: url("../fonts/baseone-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/baseone-heavy-webfont.woff2") format("woff2"), url("../fonts/baseone-heavy-webfont.woff") format("woff"), url("../fonts/baseone-heavy-webfont.ttf") format("truetype"), url("../fonts/baseone-heavy-webfont.svg#baseoneheavy") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'baseoneregular';
+  src: url("../fonts/baseone-regular-webfont.eot");
+  src: url("../fonts/baseone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/baseone-regular-webfont.woff2") format("woff2"), url("../fonts/baseone-regular-webfont.woff") format("woff"), url("../fonts/baseone-regular-webfont.ttf") format("truetype"), url("../fonts/baseone-regular-webfont.svg#baseoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*------------------------------------*\
     #Presets
 \*------------------------------------*/
@@ -446,24 +468,24 @@ html {
 body {
   font-size: 1.4rem;
   color: #919191;
-  font-family: "montserratlight", Arial, sans-serif;
+  font-family: "baseonebold", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #000;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #26e6e6;
+  background: #C82A17;
 }
 
 ::selection {
   color: #fff;
-  background: #26e6e6;
+  background: #C82A17;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #26e6e6;
+  background: #C82A17;
 }
 
 * {
@@ -474,7 +496,7 @@ body {
     #Utilities
 \*------------------------------------*/
 .primary-background {
-  background: #26e6e6 !important;
+  background: #C82A17 !important;
 }
 
 .secondary-background {
@@ -498,7 +520,7 @@ body {
 }
 
 .primary-color {
-  color: #26e6e6 !important;
+  color: #C82A17 !important;
 }
 
 .secondary-color {
@@ -535,11 +557,6 @@ body {
 
 .font-ebold {
   font-weight: 900 !important;
-}
-
-.font-light {
-  font-family: "montserrathairline", Arial, sans-serif !important;
-  font-weight: 300 !important;
 }
 
 .font-bigger {
@@ -614,7 +631,7 @@ body {
 }
 
 label > span {
-  color: #26e6e6 !important;
+  color: #C82A17 !important;
 }
 
 a.no-hover:hover {
@@ -827,7 +844,7 @@ a.no-hover:hover {
 
 .padder-icon {
   padding-left: 30px;
-  padding-right: 0px;
+  padding-right: 0;
   padding-top: 3px;
   height: 21px !important;
 }
@@ -854,7 +871,7 @@ a.no-hover:hover {
 }
 
 .m-xxs {
-  margin: 2px 4p !important x;
+  margin: 2px 4px !important;
 }
 
 .m-xs {
@@ -1130,7 +1147,7 @@ a.no-hover:hover {
 }
 
 .p-xxs {
-  padding: 2px 4p !important x;
+  padding: 2px 4px !important;
 }
 
 .p-xs {
@@ -2613,7 +2630,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "montserrathairline", Arial, sans-serif;
+  font-family: "baseonebold", Arial, sans-serif;
   color: #000000;
   font-weight: 800;
   margin: .5em 0;
@@ -2628,7 +2645,7 @@ h6.upper, .h6.upper {
 }
 
 h1, .h1 {
-  font-size: 7.2rem;
+  font-size: 6.2rem;
   line-height: 1em;
 }
 
@@ -2646,21 +2663,18 @@ h4, .h4 {
   font-size: 2rem;
   margin: .7em 0;
   line-height: 1.4em;
-  font-family: "montserratlight", Arial, sans-serif;
 }
 
 h5, .h5 {
   font-size: 1.8rem;
   margin: .7em 0;
   line-height: 1.4em;
-  font-family: "montserratlight", Arial, sans-serif;
 }
 
 h6, .h6 {
   font-size: 1.6rem;
   margin: .7em 0;
   line-height: 1.4em;
-  font-family: "montserratlight", Arial, sans-serif;
 }
 
 @media screen and (max-width: 48rem) {
@@ -2680,14 +2694,14 @@ h6, .h6 {
  * Texts
  **/
 a {
-  color: #26e6e6;
+  color: #C82A17;
   text-decoration: none;
   position: relative;
 }
 
 blockquote {
   font-size: 3.6rem;
-  font-family: "montserrathairline", Arial, sans-serif;
+  font-family: "baseonebold", Arial, sans-serif;
   color: #000000;
   font-style: normal;
   font-weight: 300;
@@ -2696,7 +2710,7 @@ blockquote {
 }
 blockquote cite {
   display: block;
-  font-family: "montserratlight", Arial, sans-serif;
+  font-family: "baseonebold", Arial, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-style: normal;
@@ -2707,7 +2721,7 @@ blockquote small {
 }
 
 mark {
-  background: #26e6e6;
+  background: #C82A17;
   padding: 0 5px;
   color: #fff;
 }
@@ -2724,6 +2738,19 @@ p {
 /*----------------------------------------------------------------------------*\
   #COMPONENTS
 \*----------------------------------------------------------------------------*/
+/*------------------------------------*\
+    #Buttons
+\*------------------------------------*/
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: none;
+  border: 3px solid #FFFFFF;
+  color: #C82A17;
+  font-size: 1.7rem;
+  letter-spacing: 4px;
+}
+
 /*----------------------------------------------------------------------------*\
   #MODULES
 \*----------------------------------------------------------------------------*/
@@ -2731,21 +2758,39 @@ p {
     #Home
 \*------------------------------------*/
 .home {
+  display: table;
+  width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
   margin-bottom: 1000px;
 }
 .home__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
+  opacity: 0;
 }
 .home__content h1 {
   color: #fff;
+  margin: 0;
+}
+.home__names {
+  padding-left: 0;
+  margin: 0;
+}
+.home__names .home__name {
+  list-style-type: none;
+  display: inline-block;
+  margin: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.home__names .first-name {
+  display: block;
+}
+.home__names .last-name {
+  font-size: 1.9rem;
 }
 .home__video {
   position: absolute;
@@ -2757,6 +2802,148 @@ p {
   height: auto;
   z-index: -100;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.blink {
+  -webkit-animation: blink linear 5s;
+          animation: blink linear 5s;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  11% {
+    opacity: .4;
+  }
+  11.25% {
+    opacity: .6;
+  }
+  11.5% {
+    opacity: .4;
+  }
+  18% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: .9;
+  }
+  22% {
+    opacity: 1;
+  }
+  38.5% {
+    opacity: 1;
+  }
+  39% {
+    opacity: .8;
+  }
+  42% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.5% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: .2;
+  }
+  63.25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .8;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  11% {
+    opacity: .4;
+  }
+  11.25% {
+    opacity: .6;
+  }
+  11.5% {
+    opacity: .4;
+  }
+  18% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: .9;
+  }
+  22% {
+    opacity: 1;
+  }
+  38.5% {
+    opacity: 1;
+  }
+  39% {
+    opacity: .8;
+  }
+  42% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.5% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: .2;
+  }
+  63.25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .8;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
