@@ -1,17 +1,6 @@
-.blink.infinite {
+.blink {
    animation: blink linear infinite 3s;
 }
-.blink{
-   animation: blink linear 5s;
-}
-
-.fadeIn{
-
-}
-
-
-
-
 
 @keyframes blink {
 0% { opacity: 0; }
