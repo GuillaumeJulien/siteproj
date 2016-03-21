@@ -1,5 +1,5 @@
 document.getElementById('home-video').addEventListener('ended', onVideoEnded);
 
 function onVideoEnded (){
-  document.getElementById('home-content').style.opacity = 1;
+  document.getElementById('home-content').classList.add('home__content--visible');
 }

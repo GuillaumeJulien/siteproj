@@ -10,28 +10,19 @@
   overflow: hidden;
   margin-bottom: 1000px; // TODO: remove this when there's content above
 
-  &__content {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    opacity: 0;
-    
-    h1 {
-      color: #fff;
-      margin: 0;
-    }
-  }
-
   &__names {
     padding-left: 0;
     margin: 0;
 
     .home__name {
+      opacity: 0;
+      transition: all .25s ease 2s;
       list-style-type: none;
       display: inline-block;
       margin: 2rem;
       color: #fff;
       font-size: 1.6rem;
+      transform: translate3d(0,10px,0) scale(0.9);
     }
 
     .first-name {
@@ -39,6 +30,41 @@
     }
     .last-name {
       font-size: 1.9rem;
+    }
+  }
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+    h1 {
+      color: #fff;
+      opacity: 0;
+      margin: 0;
+    }
+
+    .home__CTA {
+      margin-top: 50px;
+      opacity: 0;
+      transform: translate3d(0,10px,0) scale(0.9);
+    }
+
+    &--visible {
+
+      h1 {
+        opacity: 1;
+      }
+
+      .home__name {
+        opacity: 1;
+        transform: translate3d(0,0,0) scale(1);
+      }
+
+      .home__CTA {
+        opacity: 1;
+        transform: translate3d(0,0,0) scale(1);
+      }
     }
   }
 
