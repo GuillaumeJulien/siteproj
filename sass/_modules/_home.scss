@@ -81,4 +81,18 @@
     z-index: -100;
     transform: translate(-50%, -50%);
   }
+
+  /**
+   * Transparent to black graident in bottom of home module
+   **/
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 80%;
+    background-image: linear-gradient(to top, #000, rgba(0,0,0,0));
+  }
 }
