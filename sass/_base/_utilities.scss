@@ -24,10 +24,6 @@
 .font-sbold{font-weight: 600 !important;}
 .font-bold{font-weight: 700 !important;}
 .font-ebold{font-weight: 900 !important;}
-.font-light {
-  font-family: $font-primary-light !important;
-  font-weight: 300 !important;
-}
 
 .font-bigger {
   font-size: 1.3em;
@@ -135,7 +131,7 @@ a.no-hover:hover {
 .wrapper-xl{padding: 50px !important;}
 
 .padder{padding-left:15px;padding-right: 15px !important;}
-.padder-icon{padding-left:30px;padding-right: 0px; padding-top: 3px; height: 21px !important;}
+.padder-icon{padding-left:30px;padding-right: 0; padding-top: 3px; height: 21px !important;}
 .padder-v{padding-top:15px;padding-bottom: 15px !important;}
 
 .padder-bottom { padding-bottom: 15px !important;}
@@ -144,7 +140,7 @@ a.no-hover:hover {
 .p-l { padding: 16px !important;}
 .p-l-35 { padding-left: 35px !important;}
 
-.m-xxs{margin: 2px 4p !importantx}
+.m-xxs{margin: 2px 4px !important;}
 .m-xs{margin: 5px !important;}
 .m-sm{margin: 10px !important;}
 .m{margin: 15px !important;}
@@ -223,7 +219,7 @@ a.no-hover:hover {
 .m-b-n-xl{margin-bottom: -40px !important;}
 
 
-.p-xxs{padding: 2px 4p !importantx}
+.p-xxs{padding: 2px 4px !important;}
 .p-xs{padding: 5px !important;}
 .p-sm{padding: 10px !important;}
 .m{padding: 15px !important;}

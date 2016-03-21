@@ -13,7 +13,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: $font-primary-light;
+  font-family: $font-primary;
   color: $heading-font-color;
   font-weight: 800;
   margin: .5em 0;
@@ -24,12 +24,12 @@ h6, .h6 {
 }
 
 // Use .h* classes to override default h* sizes
-h1, .h1 {font-size: 7.2rem; line-height: 1em;}
+h1, .h1 {font-size: 6.2rem; line-height: 1em;}
 h2, .h2 {font-size: 5.5rem; line-height: 1.2em;}
 h3, .h3 {font-size: 2.8rem; line-height: 1.3em;}
-h4, .h4 {font-size: 2rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
-h5, .h5 {font-size: 1.8rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
-h6, .h6 {font-size: 1.6rem; margin: .7em 0; line-height: 1.4em; font-family: $font-primary;}
+h4, .h4 {font-size: 2rem; margin: .7em 0; line-height: 1.4em;}
+h5, .h5 {font-size: 1.8rem; margin: .7em 0; line-height: 1.4em;}
+h6, .h6 {font-size: 1.6rem; margin: .7em 0; line-height: 1.4em;}
 
 @media screen and (max-width: 48rem) {
   h1, .h1 {font-size: 5rem;}
@@ -48,7 +48,7 @@ a {
 
 blockquote {
   font-size: 3.6rem;
-  font-family: $font-primary-light;
+  font-family: $font-primary;
   color: $heading-font-color;
   font-style: normal;
   font-weight: 300;
