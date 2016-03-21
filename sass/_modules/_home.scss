@@ -3,22 +3,42 @@
 \*------------------------------------*/
 
 .home {
+  display: table;
+  width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
   margin-bottom: 1000px; // TODO: remove this when there's content above
 
   &__content {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
+    opacity: 0;
     
     h1 {
       color: #fff;
+      margin: 0;
+    }
+  }
+
+  &__names {
+    padding-left: 0;
+    margin: 0;
+
+    .home__name {
+      list-style-type: none;
+      display: inline-block;
+      margin: 2rem;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+
+    .first-name {
+      display: block;
+    }
+    .last-name {
+      font-size: 1.9rem;
     }
   }
 
