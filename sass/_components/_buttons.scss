@@ -5,7 +5,7 @@
 .button {
   display: inline-block;
   padding: 1rem 3rem;
-  background: none;
+  background: rgba(0,0,0,0.35);
   border: 2px solid $brand-primary;
   color: #fff;
   font-size: 1.7rem;
@@ -14,7 +14,11 @@
   transition: all .3s ease;
 
   &:hover {
-    color: $brand-primary;
-    background: #fff;
+    background: rgba(0,0,0,0.7);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
   }
 }
