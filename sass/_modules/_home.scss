@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #Home
+\*------------------------------------*/
+
+.home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1000px; // TODO: remove this when there's content above
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    
+    h1 {
+      color: #fff;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+  }
+}
