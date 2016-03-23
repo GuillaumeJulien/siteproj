@@ -449,6 +449,8 @@ body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   background: #000;
+  overflow: hidden; // Only active when video still not ended
+  height: 100vh;
 }
 
 ::selection {
