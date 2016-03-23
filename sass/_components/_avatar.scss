@@ -1,0 +1,9 @@
+.avatar {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid $brand-primary;
+  box-shadow: 0 0 9px $brand-primary;
+  display: inline-block;
+  overflow: hidden;
+}
