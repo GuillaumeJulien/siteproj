@@ -1,7 +1,7 @@
 document.getElementById('home-video').addEventListener('ended', onVideoEnded);
 
 function onVideoEnded (){
-  document.getElementById('home-content').classList.add('home__content--visible');
+  document.getElementsByTagName('body')[0].classList.add('video-ended');
   document.getElementById('title').classList.add('blink');
   document.getElementById('credit').classList.add('fadeInDown');  
 }
