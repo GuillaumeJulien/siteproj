@@ -20,4 +20,18 @@
 
 .section-intention {
   padding-bottom: 0;
+
+  background: url('../img/scenario.jpg') right bottom no-repeat;
+}
+
+
+.section-jason {
+  height: 550px;
+  background: url('../img/jason.jpg') center;
+  background-size: cover;
+
+  .col-md-6 .headlines {
+    max-width: 400px;
+    color: #8099AA;
+  }
 }
