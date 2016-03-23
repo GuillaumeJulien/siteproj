@@ -15,25 +15,3 @@ $color-light-gray: #919191 !default;
 
 $font-primary: 'baseonebold', Arial, sans-serif !default;
 $font-secondary: Arial, sans-serif !default;
-
-$breakpoint-phone: 568px !default;
-$breakpoint-tablet: 768px !default;
-$breakpoint-desktop: 960px !default;
-
-$screen-phone-max: $breakpoint-phone !default;
-$screen-tablet-min: $breakpoint-phone + 1 !default;
-$screen-tablet-max: $breakpoint-tablet !default;
-$screen-desktop-min: $breakpoint-tablet + 1 !default;
-
-//** Number of columns in the grid.
-$grid-columns: 12 !default;
-
-//** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width: 30px !default;
-
-// Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint: $breakpoint-tablet !default;
-
-//** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
