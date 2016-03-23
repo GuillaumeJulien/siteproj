@@ -52,6 +52,9 @@
   #MODULES
 \*----------------------------------------------------------------------------*/
 
-@import "_modules/_home";
-@import "_modules/_animations";
+@import "_modules/_home",
+        "_modules/_animations",
+        "_modules/_sections";
+
+
 @import "animate-sass/animate";

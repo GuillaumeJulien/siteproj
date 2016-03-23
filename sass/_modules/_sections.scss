@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #Sections
+\*------------------------------------*/
+
+.section {
+  padding: 100px 0;
+
+  &--light {
+    background: #fff;
+
+    .section__title {
+      color: #000;
+    }
+  }
+}
+
+.section-presentation {
+
+}
+
+.section-intention {
+  padding-bottom: 0;
+}
