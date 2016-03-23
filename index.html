@@ -14,33 +14,41 @@
   <body>
     <section class="home">
       <div class="home__content" id="home-content">
-        <h1 id="title">À la recherche du respect</h1>
+        <h1 class="back-title">À la recherche du respect</h1>
+        <h1 id="title" class="front-title">À la recherche du respect</h1>
 
-        <ul class="home__names" id="credit">
-          <li class="home__name">
-            <span class="first-name">Amadine</span>
+        <ul class="team-names"  id="credit">
+          <li class="team-names__item">
+            <span class="first-name">Amandine</span>
             <span class="last-name">Cruz</span>
           </li>
-          <li class="home__name">
+          <li class="team-names__item">
             <span class="first-name">Florian</span>
             <span class="last-name">Petit</span>
           </li>
-          <li class="home__name">
+          <li class="team-names__item">
             <span class="first-name">Guillaume</span>
             <span class="last-name">Julien</span>
           </li>
-          <li class="home__name">
+          <li class="team-names__item">
             <span class="first-name">Rémy</span>
             <span class="last-name">Sclippa</span>
           </li>
         </ul>
 
-        <button class="button home__CTA">Enter Site</button>
+        <button class="button button--icon home__CTA">
+          <span class="button__arrow"></span>
+          <span class="button__text">Voir le trailer</span>
+        </button>
       </div>
 
       <video class="home__video" autoplay id="home-video" muted>
         <source src="video/home-video.mp4" type="video/mp4">
       </video>
+
+      <a class="home__scroll-down" href="#2">
+        <svg width="513" height="276" viewBox="0 0 513 276" xmlns="http://www.w3.org/2000/svg"><title>Scroll Down</title><g fill="#000" fill-rule="evenodd"><path d="M256 275.6c-2.8 0-5.5-1.1-7.6-3.2L3 18.3c-4-4.2-3.9-10.9.3-14.9s10.9-3.9 14.9.3l245.5 254c4 4.2 3.9 10.9-.3 14.9-2.1 2-4.8 3-7.4 3z" id="Shape"/><path d="M256 275.6c-2.6 0-5.3-1-7.3-3-4.2-4-4.3-10.7-.3-14.9l245.5-254c4-4.2 10.7-4.3 14.9-.3 4.2 4 4.3 10.7.3 14.9l-245.5 254c-2.1 2.2-4.8 3.3-7.6 3.3z"/></g></svg>
+      </a>
     </section>
 
     <script src="js/main.js"></script>
