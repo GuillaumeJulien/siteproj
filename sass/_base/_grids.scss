@@ -27,9 +27,9 @@ $container-sm: #{$width-sm}rem + $gutter-width !default;
 $container-md: #{$width-md}rem + $gutter-width !default;
 $container-lg: #{$width-lg}rem + $gutter-width !default;
 
-$xs: 'phone' !default;
-$sm: 'tablet' !default;
-$md: 'desktop' !default;
+$xs: 'xs' !default;
+$sm: 'sm' !default;
+$md: 'md' !default;
 $lg: 'lg' !default;
 
 $block-delimiter: '-' !default;
