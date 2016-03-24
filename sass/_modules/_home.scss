@@ -84,12 +84,13 @@
 
   &__scroll-down {
     opacity: 0;
+    padding: 2rem;
     display: inline-block;
     position: absolute;
-    bottom: 3rem;
+    bottom: 1rem;
     z-index: 10;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -4.5rem;
 
     svg {
       width: 50px;
