@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #SocialLinks
+\*------------------------------------*/
+
+.social-links {
+  padding-left: 0;
+
+  &__item {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}

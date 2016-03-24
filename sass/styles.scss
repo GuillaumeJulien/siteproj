@@ -15,9 +15,15 @@
  *
  * #COMPONENTS
  * #Buttons..............Buttons
+ * #Avatar...............Avatars
+ * #TeamNames............Team names
+ * #SocialLinks..........Social Links
  *
  * #MODULES
  * #Home.................Home styles
+ * #Animations...........Animations
+ * #Sections.............Sections styles
+ * #Footer...............Footer styles
  *
  */
 
@@ -43,7 +49,8 @@
 
 @import "_components/_buttons",
         "_components/_avatar",
-        "_components/_team-names";
+        "_components/_team-names",
+        "_components/_social-links";
 
 
 
@@ -55,7 +62,8 @@
 
 @import "_modules/_home",
         "_modules/_animations",
-        "_modules/_sections";
+        "_modules/_sections",
+        "_modules/_footer";
 
 
 @import "animate-sass/animate";
