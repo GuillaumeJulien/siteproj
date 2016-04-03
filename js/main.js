@@ -7,6 +7,8 @@ var loadYouTubeApi, trailerPlayer, playTrailer, loadFitVids;
 var trailerEl = document.getElementById('trailer');
 var closeButton = document.getElementById('trailer-close');
 
+trailerEl.style.display = 'none';
+
 loadYouTubeApi = function () {
   var tag = document.createElement('script');
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -26,11 +28,7 @@ window.onYouTubeIframeAPIReady = function() {
 };
 
 playTrailer = function () {
-  var wrapperEl = document.getElementsByClassName('trailer__wrapper')[0];
-  var videoEl = document.getElementById('trailer-player');
-
-  trailerEl.style.display = 'block';
-  wrapperEl.style.marginTop = (window.innerHeight - videoEl.clientHeight) / 2 + "px";
+  trailerEl.style.display = null;
   trailerEl.style.opacity = 1;
 
   trailerPlayer.playVideo();
