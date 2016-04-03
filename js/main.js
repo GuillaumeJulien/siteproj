@@ -41,7 +41,8 @@ closeTrailer = function (e) {
   trailerPlayer.stopVideo();
 
   trailerEl.style.display = 'none';
-  trailerEl.style.opacity = '0';
+  trailerEl.style.opacity = 0;
+  homeVideo.style.opacity = 1;
   homeVideo.currentTime = '0';
   homeVideo.play();
 };
@@ -69,7 +70,7 @@ function showTrailer() {
  rewindVideo();
  document.getElementsByTagName('body')[0].classList.remove('video-ended');
  setTimeout(function () {
-   //video.src = '';
+   homeVideo.style.opacity = 0;
    playTrailer()
  }, 1000);
 }
