@@ -2,48 +2,60 @@
  * Trailer
  */
 
-var firstScriptTag, player, tag, playTrailer, loadFitVids;
+var loadYouTubeApi, trailerPlayer, playTrailer, loadFitVids;
 
-tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var trailerEl = document.getElementById('trailer');
+var closeButton = document.getElementById('trailer-close');
+
+loadYouTubeApi = function () {
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}();
 
 window.onYouTubeIframeAPIReady = function() {
-  player = new YT.Player('trailer-player', {
+  trailerPlayer = new YT.Player('trailer-player', {
     height: '540',
     width: '960',
     videoId: '0M83z9y3h8w',
     events: {
-      'onReady': loadFitVids
+      'onReady': fitvids
     }
   });
 };
 
-loadFitVids = function () {
-  fitvids();
-};
-
 playTrailer = function () {
-  var el = document.getElementById('trailer');
   var wrapperEl = document.getElementsByClassName('trailer__wrapper')[0];
   var videoEl = document.getElementById('trailer-player');
 
-  el.style.display = "block";
+  trailerEl.style.display = 'block';
   wrapperEl.style.marginTop = (window.innerHeight - videoEl.clientHeight) / 2 + "px";
-  el.style.opacity = 1;
+  trailerEl.style.opacity = 1;
 
-  player.playVideo();
+  trailerPlayer.playVideo();
 };
+
+closeTrailer = function (e) {
+  e.preventDefault();
+  trailerPlayer.stopVideo();
+
+  trailerEl.style.display = 'none';
+  trailerEl.style.opacity = '0';
+  homeVideo.currentTime = '0';
+  homeVideo.play();
+};
+
+closeButton.addEventListener('click', closeTrailer);
 
 
 /**
  * Home Section
  */
 
-var video = document.getElementById('home-video');
+var homeVideo = document.getElementById('home-video');
 
-video.addEventListener('ended', onVideoEnded);
+homeVideo.addEventListener('ended', onVideoEnded);
 document.getElementById('button-trailer-view').addEventListener('click', showTrailer);
 
 function onVideoEnded (){
@@ -57,20 +69,20 @@ function showTrailer() {
  rewindVideo();
  document.getElementsByTagName('body')[0].classList.remove('video-ended');
  setTimeout(function () {
-   video.src = '';
+   //video.src = '';
    playTrailer()
  }, 1000);
 }
 
 function rewindVideo() {
   var intervalRewind = setInterval(function(){
-    video.playbackRate = 1.0;
-    if(video.currentTime == 0){
+    homeVideo.playbackRate = 1.0;
+    if(homeVideo.currentTime == 0){
         clearInterval(intervalRewind);
-        video.pause();
+        homeVideo.pause();
     }
     else{
-        video.currentTime += -.9;
+        homeVideo.currentTime += -.9;
     }
   },150);
 }
