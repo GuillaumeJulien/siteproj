@@ -36,6 +36,7 @@ playTrailer = function () {
   player.playVideo();
 };
 
+
 /**
  * Home Section
  */
@@ -57,7 +58,6 @@ function showTrailer() {
  document.getElementsByTagName('body')[0].classList.remove('video-ended');
  setTimeout(function () {
    video.src = '';
-   video.controls = true;
    playTrailer()
  }, 1000);
 }
