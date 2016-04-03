@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #Trailer
+\*------------------------------------*/
+
+.trailer {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    svg {
+      width: 30px;
+      fill: white;
+      opacity: 0.5;
+    }
+
+    #paths {
+      transform-origin: 50% 50% 0px;
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+
+      #paths {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
